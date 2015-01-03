@@ -1,0 +1,121 @@
+@charset "utf-8";
+Lists {
+
+}
+text box {
+}
+box {
+	width: 200%;
+	height: 100px;
+}
+MainTitle {
+	right: 50%;
+	left: 40%;
+	position: relative;
+}
+
+
+
+
+
+@media (width:200px){
+.TextBox {
+	position: static;
+}
+
+}
+.BFetchsBox {
+	text-align: center;
+   width: 300px;
+    height: 150px;
+    line-height: 20px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 20;
+}
+
+.TextBox {
+	text-align: center;
+   width: 300px;
+    height: 200px;
+    line-height: 20px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 20;
+}
+
+.FetchBox {
+	text-align: center;
+   width: 800px;
+    height: 400px;
+    line-height: 20px;
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -400px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 20;
+	background-color: #f1c40f;
+	overflow: auto;
+}
+
+.SubBox {
+	text-align: center;
+   	width: 500px;
+    height: 430px;
+    line-height: 20px;
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 20;
+	background-color: #f1c40f;
+}
+
+
+.datatab {
+	position: relative;
+	left: 50px;
+	height: 275px;
+	background-color: #f1c40f;
+	background-size: cover;
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.overlayback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
