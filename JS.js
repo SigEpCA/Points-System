@@ -137,14 +137,14 @@ function subm()
 				L[L.length] = name;
 				tts("ServerData", "Names", function(){}, names);
 			}});
-		gebi("rname").value = "";
-		gebi("remail").value = "";
-		gebi("rclass").value = "";
+		name = "";
+		email = "";
+		level = "";
 		openregister();
 	}
 	if (ret == "C")
 	{
-		gebi("rclass").value = "Invalid Class";
+		level = "Invalid Class";
 		gebi("rclass").style.backgroundColor = "red";
 	}
 	else
