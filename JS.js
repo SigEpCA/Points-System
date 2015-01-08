@@ -39,10 +39,10 @@ var get_points = {
 };
 
 //List of Valid Classes, I could have probably made this a local variable but I thought I might want to use it again
-var classes = ["SIGMA", "PHI", "EPSILON", "BROTHERMENTOR"]
+var classes = ["SIGMA", "PHI", "EPSILON", "BROTHERMENTOR"];
 
 //A list of brothers which is updated on startup, to prevent having to make multiple calls to server for the same data
-var brothers = []
+var brothers = [];
 
 //The api code for the server. Try not to Give it to people, though I'm going to generate a new one before we go live anyway.
 var api = "ENTER KEY HERE";
@@ -93,24 +93,25 @@ function format_name(name)
 //Checks to make sure New Brother is Valid when registering.
 function check_sub(name, level)
 {			
-	if ($.inArray(level, classes) == -1)
-		{return "C"}
-	if ($.inArray(name, brothers) != -1)
-		{return "N"}
-	else
-		{return true}
+	if ($.inArray(level, classes) == -1) {
+		return "C";
+	}
+	if ($.inArray(name, brothers) != -1) { 
+		return "N";
+	}
+	else {
+		return true;
+	}
 }
 
 //Updates the local list of brother names with the one stored on the server.
-function getlist()
-{
+function getlist() {
 	function cs()
 	{
-		if (this.readyState == 4)
-		{
+		if (this.readyState == 4) {
 			var names = $.parseJSON(this.response);
 			var L = names["list"];
-			brothers = L
+			brothers = L;
 		}
 	}		
 	tts("ServerData", "Names", cs);
@@ -118,16 +119,14 @@ function getlist()
 
 
 //Sends New Brothers to Server upon registration. This is a rather involved function, talk to me if you have questions.
-function subm()
-{
+function subm() {
 	var name = gebi("rname").value;
 	var email = gebi("remail").value;
 	var level = gebi("rclass").value;
 	name = format_name(name);
 	level = format_name(level);
 	var ret = check_sub(name, level);
-	if (ret == true)
-	{
+	if (ret == true) {
 		tts("ServerData", name, function(){}, {"_id": name, "class": level});
 		tts(level, name, function(){}, {"_id": name, "email": email, "class": level, "points": 0, "tags": [], "submissions": []});
 		tts("ServerData", "Names", function(){

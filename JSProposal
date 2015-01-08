@@ -1,0 +1,30 @@
+$(document).ready(function() {
+	enableMenuLinks();
+
+	
+var enableMenuLinks = function() {
+	connectLinkToModule(".submitPointsLink", ".submitPointsModule");
+	connectLinkToModule(".pastWorkLink", ".pastWorkModule");
+	connectLinkToModule(".brothersPointsLink", ".brothersPointsModule");
+	connectLinkToModule(".chapterStatsLink", ".chapterStatsModule");
+	connectLinkToModule(".aboutPageLink", ".aboutPageModule");
+		}
+
+var connectLinkToModule = function(link,module) {
+	$(link).click(function(){
+	$('.activeModule').css("display", "none").toggleClass('activeModule');
+	$(module).css("display" ,"block")toggleClass('activeModule');
+	$('menuItemHighlighted').toggleClass('menuItemHighlighted');
+	$('link').toggleClass('menuItemHighlighted');
+	})
+
+		}
+
+
+
+
+})
+
+
+
+}

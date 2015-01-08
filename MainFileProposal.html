@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SigEp Points</title>
+
+<link href="CSSProposal.css" rel="stylesheet" type="text/css">
+
+<script src="jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="JSProposal.js"></script>
+
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<!--<script src="http://use.edgefonts.net/antic:n4:default.js" type="text/javascript"></script>-->
+
+</head>
+<body>
+
+<div class = "siteHeader siteModule noSelect">
+	<div class = "siteTitle">SigEp Points Tracker</div>
+</div>
+<div class = "greeting siteModule">
+	<div class = "greeting">Welcome! You have <div class = "userTotalPoints pointsTotal"></div> points.</div></div>
+	<!--Greeting will be updated with JSON data-->
+	<div class = "siteMenu  siteModule loggedOut noSelect">
+		<div class = "highlightedMenuItem logIn">Connect with Google</div>
+		<div class = "about">About</div>
+	</div>
+
+	<div class = "siteMenu siteModule loggedIn noSelect">
+		<div class = "highlightedMenuItem submitPoints">Submit Points</div>
+		<div class = "pastWork">Your Past Work</div>
+		<div class = "brothersPoints">View Brothers</div>
+		<!-- This will be a tab for mentors to see mentee's logs, big bros and little bros to see each other's logs, for challenge coordinators to see logs of brothers in their challenge, and for any brother to request to see another's log. Alternatively you could make everything open to everyone and just have a dropdown box with everyone's name in it. -->
+		<div class = "chapterStats">Chapter Stats</div>
+		<div class = "about">About</div>
+		<div class = "logOut">Log Out</div>
+	</div>
+
+
+<div class = "liveStream siteModule activeModule">
+<div class = "liveStreamTitle title">Live Stream</div>
+<!--Live Stream will be updated with JSON data onload-->
+<div class = "liveStreamContent"></div>
+</div>
+
+<div class = "competition siteModule activeModule">
+	<div class = "competitionTitle title">Points by Challenge</div>
+	<div class =  "sigma">
+		<div class = "sigmaIcon greekLetter"></div>
+		has
+		<div class = "sigmaPoints pointsTotal"></div>
+		points.
+	</div>
+	<div class =  "phi">
+		<div class = "phiIcon greekLetter"></div>
+		has
+		<div class = "phiPoints pointsTotal"></div>
+		points.
+	</div>
+	<div class =  "epsilon">
+		<div class = "epsilonIcon greekLetter"></div>
+		has
+		<div class = "epsilonPoints pointsTotal"></div>
+		points.
+	</div>
+	<div class =  "brotherMentor">
+		<div class = "brotherMentorIcon greekLetter"></div>
+		has
+		<div class = "brotherMentorPoints pointsTotal"></div>
+		points.
+	</div>
+	</div>
+
+
+<div class = "submitPoints siteModule">
+	<div class = "title">Submit Points</div>
+<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
+	<div class = "submitPointsContent"></div>
+</div>
+
+<div class = "pastWork siteModule">
+	<div class = "title">Past Submissions</div>
+<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
+	<div class = "pastWorkContent"></div>
+</div>
+
+
+<div class = "brothersPoints siteModule">
+	<div class = "title">Other Brothers</div>
+<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
+	<div class = "brothersPointsContent"></div>
+</div>
+
+<div class = "chapterStats siteModule">
+	<div class = "title">Chapter Stats</div>
+<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
+	<div class = "chapterStatsContent"></div>
+</div>
+
+<div class = "about siteModule">
+	<div class = "title">About</div>
+<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
+	<div class = "aboutContent"></div>
+</div>
+
+
+
+<div class = "disclaimer siteModule">
+<div class = "disclaimerContent">Made by SigEp Cal Alpha.</div>
+</div>
+
+</body>
+</html>
