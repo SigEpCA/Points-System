@@ -5,7 +5,15 @@ enableMenuLinks();
 loadPastWork();
 loadOtherBrothers();
 loadChapterStats();
-loadAbout();*/
+loadAbout();
+
+To be implemented. Some of these functions will make calls to the JSON database
+which I need help with!
+
+They will assemble an HTML string to be inserted in the div with the appropriate
+class name.
+
+*/
 
 
 /*Here are the functions called to enable the menu.*/
@@ -50,8 +58,4 @@ function loadSubmitPoints() {
 
 
 }
-
-
-
-
 		});
