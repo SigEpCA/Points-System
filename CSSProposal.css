@@ -31,8 +31,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe4bf', end
 	max-width:900px;
 	margin-bottom:15px;
 	border:1px solid rgba(255,255,255,0.5);;
+	-webkit-box-shadow: 4px -4px 15px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow:    4px -4px 15px 0px rgba(50, 50, 50, 0.8);
+	box-shadow:         4px -4px 15px 0px rgba(50, 50, 50, 0.8);
 }
-
 .siteModule > div {
 	padding-left:15px;
 }
