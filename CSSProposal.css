@@ -5,7 +5,6 @@ html {
 
 
 body {
-
 	background: #b5afff; /* Old browsers */
 	background: -moz-linear-gradient(45deg,  #b5afff 0%, #3e527a 26%, #161616 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#b5afff), color-stop(26%,#3e527a), color-stop(100%,#161616)); /* Chrome,Safari4+ */
@@ -16,6 +15,14 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5afff', endColorstr='#161616',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	margin:0;
+}
+
+
+.siteTitle {
+	font-size:50px;
+	font-family: antic;
+	text-align:center;
+	margin-bottom:5px;
 }
 
 .siteModule {
@@ -41,7 +48,7 @@ body {
 .title {
 	font-weight:bold;
 	font-size:11pt;
-	font-family:sans-serif;
+	font-family:antic;
 	padding-top:5px;
 	padding-bottom:5px;
 	padding-left:15px;
@@ -56,7 +63,7 @@ body {
 
 .siteMenu > div {
 	font-weight:bold;
-	font-family:sans-serif;
+	font-family:antic;
 	font-size:11pt;
 	text-transform:capitalize;
 	padding-right:10px;
@@ -69,11 +76,7 @@ body {
 
 .siteMenu > div:hover {
 	cursor:pointer;
-
-}
-
-.siteMenu > div:hover {
-	font-variant:underline;
+	text-decoration:underline;
 }
 
 .loggedOut {
@@ -82,14 +85,6 @@ body {
 
 .submitPoints, .brothersPoints, .pastWork, .chapterStats, .about {
 	display:none;
-}
-
-.siteTitle {
-	font-size:46px;
-	font-family: sans-serif;
-	font-weight:600;
-	text-align:center;
-	margin-bottom:5px;
 }
 
 .highlightedMenuItem {
@@ -115,10 +110,9 @@ body {
 
 .noSelect:hover {
 	cursor:default;
-
 }
 
-
+/*This part only applies if the window is smaller than 901px wide*/
 @media (max-width:901px) {
 	html {
 		padding-left:10px;
@@ -130,6 +124,7 @@ body {
 	}
 }
 
+/*This part only applies if the window is smaller than 701px wide*/
 @media (max-width:701px) {
 
 	.siteMenu > div {
@@ -150,7 +145,5 @@ body {
 	background: -ms-linear-gradient(45deg,  #8e8f96 0%,#3e527a 17%,#161616 100%); /* IE10+ */
 	background: linear-gradient(45deg,  #8e8f96 0%,#3e527a 17%,#161616 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e8f96', endColorstr='#161616',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
 	}
 }
