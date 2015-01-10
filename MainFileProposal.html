@@ -41,24 +41,26 @@ Now we need to implement the features themselves. Once the data has been extract
 </div>
 <!--Greeting will be updated with JSON data-->
 <!--Logged-out menu (initially hidden for preview)-->
-<div class = "siteMenu  siteModule loggedOut noSelect">
-	<div class = "highlightedMenuItem logIn">Connect with Google</div>
-	<div class = "about">About</div>
+<div class = "siteMenu siteModule loggedOut noSelect">
+	<!--<div class = "logIn highlightedMenuItem">Connect with Google</div>
+	<div class = "about">About</div>-->
 </div>
 
 <!--Logged-in menu-->
 <div class = "siteMenu siteModule loggedIn noSelect">
-	<div class = "highlightedMenuItem submitPoints">Submit Points</div>
+	<!--
+	<div class = "submitPoints highlightedMenuItem">Submit Points</div>
 	<div class = "pastWork">Your Past Work</div>
 	<div class = "brothersPoints">View Brothers</div>
-	<!-- This will be a tab for mentors to see mentee's logs, big bros and little bros to see each other's logs, for challenge coordinators to see logs of brothers in their challenge, and for any brother to request to see another's log. Alternatively you could make everything open to everyone and just have a dropdown box with everyone's name -->
+	This will be a tab for mentors to see mentee's logs, big bros and little bros to see each other's logs, for challenge coordinators to see logs of brothers in their challenge, and for any brother to request to see another's log. Alternatively you could make everything open to everyone and just have a dropdown box with everyone's name 
 	<div class = "chapterStats">Chapter Stats</div>
 	<div class = "about">About</div>
 	<div class = "logOut">Log Out</div>
+	-->
 </div>
 
 <!--Livestream Module-->
-<div class = "liveStream siteModule activeModule">
+<div class = "liveStream siteModule loggedIn activeModule">
 	<div class = "liveStreamTitle title">Live Stream</div>
 	<!--Live Stream will be updated with JSON data onload-->
 	<div class = "liveStreamContent"></div>
@@ -66,8 +68,8 @@ Now we need to implement the features themselves. Once the data has been extract
 
 
 <!--The competition Module-->
-<div class = "competition siteModule activeModule">
-	<div class = "competitionTitle title">Points by Challenge</div>
+<div class = "competition siteModule loggedIn activeModule">
+	<div class = "title">Points by Challenge</div>
 
 	<!--The code is repeated for sigma, phi, epsilon, brother mentor.-->
 	<div class =  "sigma">
@@ -84,35 +86,35 @@ Now we need to implement the features themselves. Once the data has been extract
 </div>
 
 <!--Submit Points Module-->
-<div class = "submitPoints siteModule">
+<div class = "submitPoints loggedIn siteModule">
 	<div class = "title">Submit Points</div>
 	<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
 	<div class = "submitPointsContent"></div>
 </div>
 
 <!--Past Work Module-->
-<div class = "pastWork siteModule">
-	<div class = "title">Past Submissions</div>
+<div class = "pastWork loggedIn siteModule">
+	<div class = "title">Your Past Work</div>
 	<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
 	<div class = "pastWorkContent"></div>
 </div>
 
 <!--Other brother's points. This panel will be for relationships the brother has access to (mentor/mentee, brothers in the challenge you're coordinating, etc. If you're an exec you should be able to see all.-->
-<div class = "brothersPoints siteModule">
+<div class = "brothersPoints loggedIn siteModule">
 	<div class = "title">Other Brothers</div>
 	<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
 	<div class = "brothersPointsContent"></div>
 </div>
 
 <!--Chapter-wide statistics. Maybe a graph?-->
-<div class = "chapterStats siteModule">
+<div class = "chapterStats loggedIn siteModule">
 	<div class = "title">Chapter Stats</div>
 	<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
 	<div class = "chapterStatsContent"></div>
 </div>
 
 <!--About This Page.-->
-<div class = "about siteModule">
+<div class = "about loggedIn loggedOut siteModule">
 	<div class = "title">About</div>
 	<!--Initially hidden. Will be made visible nad  be updated with JSON data when the menu item is clicked-->
 	<div class = "aboutContent"></div>
