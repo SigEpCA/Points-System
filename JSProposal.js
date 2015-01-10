@@ -128,7 +128,8 @@ function activateModule(name, event){
 
 function unhighlightMenuItem(name, event) {
 	if(!event.ctrlKey) {
-		$('.siteMenu div').not(name).removeClass('highlightedMenuItem');
+		$('.siteMenu div').not(name)
+		.removeClass('highlightedMenuItem');
 	}
 }	
 
