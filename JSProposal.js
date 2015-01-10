@@ -75,7 +75,7 @@ function loadMenu(menuType) {
 function connectMenuToModules() {
 	
 	//loops through each div in menu and binds to module of same class.
-	$(".siteMenu div").click(function(event) {		
+	$(".siteMenu div").not(".siteTitle").click(function(event) {		
 		
 
 		/*uses the class name of each div element in the menu
